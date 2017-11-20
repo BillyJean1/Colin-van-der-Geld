@@ -32,7 +32,8 @@ Het uiteindelijke resultaat van deze code-along zal ik gaan proberen aan te pass
 
 
 ### Resultaat
-Bij het lezen van de eerste bron kwam ik erachter dat een artificial neural network zijn gelijkenissen heeft met een (menselijk) brein. Zo heeft bijvoorbeeld de manier van dataverwerking zijn gelijkenissen en zijn ze alletwee zelflerend. Ook zijn er verschillen: een atrificial neural network is veel sneller met dataverwerking, een brein kan niet serieel data verwerken en is een atrificial neural network beperkt tot de onderliggende code.
+Bij het lezen van de eerste bron kwam ik erachter dat een artificial neural network zijn gelijkenissen heeft met een (menselijk) brein. Zo heeft bijvoorbeeld de manier van dataverwerking zijn gelijkenissen en zijn ze alletwee zelflerend. 
+Ook zijn er verschillen: een atrificial neural network is veel sneller met dataverwerking, een brein kan niet serieel data verwerken en is een atrificial neural network beperkt tot de onderliggende code.
 
 Een atrificial neural network bestaat uit de volgende onderdelen:
 * Inputs - Invoerwaardes, de 'ogen' van de neuron
@@ -53,3 +54,4 @@ De laatste video (de code-along) was iets chaotischer, waarschijnlijk omdat de p
 Ik heb uiteindelijk geprobeerd om een applicatie te maken in processing met de bestaande code die een aantal personen aanmaakt en een wachtrij toegewezen kregen. Het idee was dat er twee wachtrijen waren en dat de computer bepaald welke rij iedere persoon het beste aan kan sluiten om zo min mogelijk te hoeven wachten. Helaas was ik te lang bezig met de bronnen te bestuderen en om het concept te begrijpen, waardoor hier geen tijd meer voor over was. Ik hoopte vanuit mijn proof of concept de hypothese te kunnen beantwoorden, maar omdat er onvoldoende tijd was om dit volledig uit te werken, moet ik de conclusie trekken vanuit de informatie van de bronnen en op basis van de bevindingen tot nu toe.
 
 ### Conclusie
+Gezien een neural network vooral kan worden gebruikt om patronen te voorspellen, lijkt dit een geschikte oplossing voor crowd control. Een keerzijde is de complexiteit van deze techniek. Ik vond het in ieder geval erg lastig om snel te kunnen begrijpen, het had allemaal wat tijd nodig. Ik denk dat het lastig haalbaar is om binnen de korte periode van het project het concept van een artificial neural network te begrijpen en vervolgens een zelflerend netwerk te ontwerpen en te ontwikkelen. Het lijkt mij goed om deze stof te laten bezinken en hier een andere week mee verder gaan, om dan te proberen zelf een beter antwoord te kunnen geven op de hypothese en duidelijk te krijgen of het daadwerkelijk inzetbaar is voor dit project.
