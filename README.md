@@ -43,3 +43,5 @@ Een atrificial neural network bestaat uit de volgende onderdelen:
 * Output - De uitvoerwaarde, het resultaat
 
 Er zijn volgens het artikel een aantal verschillende types atrificial neural networks. Op basis van deze types bestaan er verschillende netwerkarchitecturen voor neural networks. Iedere architectuur heeft weer bijbehorende voor- en nadelen. Ook zijn er verschillende algoritmes die gebruikt worden om het netwerk te trainen - de bekendste hiervan zijn 'Gradient Descent' en 'Back propagation'. Net als bij de netwerken zijn er verschillende types van leren binnen artificial neural networks. 
+
+Neural networks kunnen vooral worden gebruikt om patronen te voorspellen. Dit zou gebruikt kunnen worden om patronen te voorspellen van bezoekers van een evenement, situaties te herkennen en de crowd control te verbeteren. Nadelen van neural networks zijn dat ze training nodig hebben en dat het processorintensief kan zijn bij grote netwerken.
