@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">MyFirstApp</string>
-    <string name="action_settings">Settings</string>
-    <string name="textview">TextView</string>
-    <string name="button">Button</string>
-    <string name="title_activity_nieuwe">NieuweActivity</string>
-</resources>
