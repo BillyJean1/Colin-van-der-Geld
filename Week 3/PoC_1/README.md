@@ -16,7 +16,7 @@ Als laatste - indien er genoeg tijd over is - zal ik proberen om mijn app iets u
 
 ## Resultaat
 Allereerst heb ik de Estimote app gedownload en gekeken of de beacons werkte. Dit lukte:
-[afbeelding 1]
+![Beacon1](https://github.com/BillyJean1/Colin-van-der-Geld/blob/master/Week%203/PoC_1/beacon1.jpg?raw=true)
 Ik moest alleen de beacon "claimen" om hem een naam te geven en de gegevens te wijzigen. Gezien de beacons geleend waren, wilde ik deze niet claimen (a.d.h.v. mijn email). Ik weet niet of dit in de toekomst problemen oplevert, maar dit is in ieder geval iets wat ik in mijn achterhoofd moet houden.
 Het is mooi om te zien dat de Estimote app de afstand tot een beacon toont en toont welke kleur beacon het is, hierdoor denk ik dat het voor mij mogelijk is om er leuke dingen mee te kunnen doen.
 
@@ -24,7 +24,7 @@ Allereerst heb ik een nieuw Ionic project gestart en kwam tot mijn verbazing teg
 Na installeren hiervan heb ik de usage code geimplementeerd en ben ik wat code uit gaan proberen. Het duurde even voordat ik Ionic weer aan de praat had, ik ben namelijk geswitcht van laptop en dat leverde problemen op met het debuggen van een Ionic project op een extern device.
 Ondanks dat er een hele plugin van Ionic was, duurde het lang voordat mij iets lukte met de code. Dit kwam doordat ik dacht dat de documentatie van de plugin niet klopte, maar in werkelijkheid de beacons afgeschermd waren door de eigenaar. 
 
-[Afbeelding 2]
+![Beacon2](https://github.com/BillyJean1/Colin-van-der-Geld/blob/master/Week%203/PoC_1/beacon2.png?raw=true)
 De beacons die ik gebruik waren geleend (van school) waardoor ze op naam stonden van iemand. Zoals mijn vermoedens al eerder waren, leverde het problemen op dat ik de beacon niet kon claimen. Door de beacon te claimen, kan ik de UUID's terugvinden samen met de major en de minor. Als ik die had, kon ik met de beacons verbinden en de waardes bekijken. In eerste instantie ben ik van alles gaan proberen en onderzoeken om de code werkende te krijgen, waarna bleek dat de documentatie niet optimaal was. Hierin stond dat de beacons gescand konden worden door middel van het meegeven van alleen maar 'null'-waardes. Als ik dit doe, krijg ik een melding dat het UUID niet null mag zijn. Hierdoor kon ik er niet achter komen wat de UUID's waren en de minor/major.
 Ook via de officiele app was het achterhalen van deze waardes verborgen en alleen beschikbaar voor de eigenaar ervan. Helaas! Ik had graag wat dingetjes geprobeerd met de beacons.
 
