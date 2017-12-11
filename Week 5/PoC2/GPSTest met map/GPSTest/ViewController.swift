@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     @IBOutlet weak var map: MKMapView!
     let setLocation = CLLocation(latitude: 51.8369, longitude: 5.78018)
     let locationManager = CLLocationManager()
@@ -49,6 +49,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @IBAction func navigate(_ sender: UIButton) {
+        let twoDLocation = CLLocationCoordinate2D(latitude: setLocation.coordinate.latitude, longitude: setLocation.coordinate.longitude)
+        
+        let regionSpan = MKCoordinateRegionMakeWithDistance(twoDLocation, 1000, 1000)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
+        ]
+        
+        let placeMark = MKPlacemark(coordinate: twoDLocation)
+        let mapItem = MKMapItem(placemark: placeMark)
+        mapItem.name = "Mijn favoriete attractie"
+        mapItem.openInMaps(launchOptions: options)
+        
+    }
+    
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first{
@@ -102,7 +119,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if let annotationView = annotationView {
             
             annotationView.canShowCallout = true
-            annotationView.image = UIImage(
+            let image = UIImage(named: "funfair")
+//            image?.draw(in: CGRect(x: 0, y: 0, width: 16, height: 16))
+            
+            let size = CGSize(width: 64, height: 64)
+            UIGraphicsBeginImageContext(size)
+            image?.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+            let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            
+            annotationView.image = resizedImage
+            
         }
         return annotationView
     }

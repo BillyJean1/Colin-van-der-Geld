@@ -11,11 +11,11 @@
 		1322531A1FDE7F9D008A1590 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132253191FDE7F9D008A1590 /* ViewController.swift */; };
 		1322531D1FDE7F9E008A1590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1322531B1FDE7F9E008A1590 /* Main.storyboard */; };
 		132253201FDE7F9E008A1590 /* GPSTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1322531E1FDE7F9E008A1590 /* GPSTest.xcdatamodeld */; };
-		132253221FDE7F9E008A1590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132253211FDE7F9E008A1590 /* Assets.xcassets */; };
 		132253251FDE7F9E008A1590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132253231FDE7F9E008A1590 /* LaunchScreen.storyboard */; };
 		132253301FDE7F9E008A1590 /* GPSTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322532F1FDE7F9E008A1590 /* GPSTestTests.swift */; };
 		1322533B1FDE7F9E008A1590 /* GPSTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322533A1FDE7F9E008A1590 /* GPSTestUITests.swift */; };
 		1322534A1FDEAD52008A1590 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132253491FDEAD52008A1590 /* MapKit.framework */; };
+		1322534E1FDEB857008A1590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1322534D1FDEB857008A1590 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		132253191FDE7F9D008A1590 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1322531C1FDE7F9E008A1590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1322531F1FDE7F9E008A1590 /* GPSTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GPSTest.xcdatamodel; sourceTree = "<group>"; };
-		132253211FDE7F9E008A1590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		132253241FDE7F9E008A1590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		132253261FDE7F9E008A1590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1322532B1FDE7F9E008A1590 /* GPSTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +50,7 @@
 		1322533A1FDE7F9E008A1590 /* GPSTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSTestUITests.swift; sourceTree = "<group>"; };
 		1322533C1FDE7F9E008A1590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		132253491FDEAD52008A1590 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1322534D1FDEB857008A1590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +103,10 @@
 		132253161FDE7F9D008A1590 /* GPSTest */ = {
 			isa = PBXGroup;
 			children = (
+				1322534D1FDEB857008A1590 /* Assets.xcassets */,
 				132253171FDE7F9D008A1590 /* AppDelegate.swift */,
 				132253191FDE7F9D008A1590 /* ViewController.swift */,
 				1322531B1FDE7F9E008A1590 /* Main.storyboard */,
-				132253211FDE7F9E008A1590 /* Assets.xcassets */,
 				132253231FDE7F9E008A1590 /* LaunchScreen.storyboard */,
 				132253261FDE7F9E008A1590 /* Info.plist */,
 				1322531E1FDE7F9E008A1590 /* GPSTest.xcdatamodeld */,
@@ -253,7 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				132253251FDE7F9E008A1590 /* LaunchScreen.storyboard in Resources */,
-				132253221FDE7F9E008A1590 /* Assets.xcassets in Resources */,
+				1322534E1FDEB857008A1590 /* Assets.xcassets in Resources */,
 				1322531D1FDE7F9E008A1590 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

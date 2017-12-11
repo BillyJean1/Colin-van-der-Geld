@@ -19,15 +19,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nXr-Gj-2Ww">
-                                <rect key="frame" x="0.0" y="10" width="834" height="1112"/>
+                                <rect key="frame" x="0.0" y="10" width="834" height="500"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGz-Ss-MKp">
+                                <rect key="frame" x="387" y="664" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Navigate"/>
+                                <connections>
+                                    <action selector="navigate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Q1-96-Ouv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nXr-Gj-2Ww" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="7Tx-cI-A7x"/>
-                            <constraint firstItem="nXr-Gj-2Ww" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="KfQ-Io-xHO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nXr-Gj-2Ww" secondAttribute="bottom" constant="602" id="BXI-TT-DI3"/>
                             <constraint firstItem="nXr-Gj-2Ww" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="O0R-8e-PtJ"/>
-                            <constraint firstItem="nXr-Gj-2Ww" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Q76-lb-TMB"/>
+                            <constraint firstItem="nXr-Gj-2Ww" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pfl-UV-BcJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="nXr-Gj-2Ww" secondAttribute="top" constant="10" id="uaV-ta-5e2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
