@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=Idzn65L4p-A
 
 https://stackoverflow.com/questions/41800302/how-to-set-custom-pin-image-in-mapview-swift-ios
 
-https://stackoverflow.com/questions/36217710/how-to-launch-maps-app-and-start-navigation
+https://stackoverflow.com/questions/28604429/how-to-open-maps-app-programmatically-with-coordinates-in-swift
 
 ## Hypothese
 Vorige PoC heb ik gekeken naar locaties, maar het zou leuk zijn als ik deze op een kaart kan weergeven. Ook ben ik benieuwd wat er allemaal mogelijk is binnen iOS op het gebied van kaarten. Ik weet dat Google Maps dingen ondersteunen als custom icons, informatie en navigeren naar een bepaald punt (te voet). Ik wil dus gaan kijken naar hoe moeilijk het is kaarten werkende te krijgen binnen iOS (Swift), kijken of het mogelijk is thumbnails en custom icons toe te voegen aan de map en of er mogelijk (geïntegreerde) navigatie kan worden toegevoegd aan de map, met eventueel de optie om te voet te gaan (de meeste evenementbezoekers zullen te voet willen navigeren). Deze functionaliteiten kunnen handig zijn als we op een bepaalde plek op de kaart een aanbeveling doen voor onze app en de gebruiker erheen wilt navigeren. Het zou bijvoorbeeld leuk zijn een reuzenrad als icoon in te stellen en informatie over deze attractie op het kaartje weer te kunnen geven. 
@@ -33,6 +33,14 @@ Het is dus inderdaag hetgeen wat ik verwacht had dat ik kreeg. Annotations en ma
 
 Ik ga verder met de tutorial en zorg dat de app automatisch focust op het punt dat ik eerder geselecteerd heb op de kaart (dit zou bijvoorbeeld een attractie kunnen zijn). Vervolgens zoom ik ver in op de gekozen locatie, dit kan handig zijn als je bijvoorbeeld de wegen ernaartoe wilt weten.
 
-Nu wordt het tijd om te kijken of ik een custom icon kan toevoegen als pin in Apple Maps. Ik Googelde een mooi icoontje van een attractie en volgde de tutorial van de derde bron. Ik verplaatse het setten van de delegate naar de viewDidLoad toe van de controller. 
+Nu wordt het tijd om te kijken of ik een custom icon kan toevoegen als pin in Apple Maps. Ik Googelde een mooi icoontje van een attractie en volgde de tutorial van de derde bron. Ik verplaatse het setten van de delegate naar de viewDidLoad toe van de controller. Vervolgens voegde ik het icoontje toe als asset in Xcode en verwijderde per ongeluk de assets file waardoor het even duurde voordat ik deze terug had. Toen ik eenmaal de code had aangepast, werkte het mooi. het enige nadeel was dat het icoontje gigantisch was, maar hij was op z'n minst klikbaar. Daarom probeerde ik de imagegrootte naar een formaat als bijvoorbeeld 32x32 te krijgen. Dit lukte helaas niet, daarom ben ik gaan kijken naar hoe ik een annotationview in verhouding aan kon passen. Toen ik daarnaar ging Googelen kwam ik op het volgende artikel terecht: https://stackoverflow.com/questions/33262759/size-image-pin-annotation/33272038 . Dit artikel gebruikte ik en kreeg ik het uiteindelijk voor elkaar een eigen logo eraan te geven met het juiste formaat:
+[Afbeelding 2]
+
+Als laatste zal ik nu gaan kijken naar het navigeren zelf. Ik ga eerst kijken hoe ik de maps van Apple zelf kan openen met navigatie app van iOS. Daarvoor maak ik een knop, als deze ingedrukt wordt, moet deze de navigatiesoftware van Apple openen en naar de gesette locatie navigeren. Omdat dit wederom weer oude code was (zie laatste bron) moest ik heel wat aanpassen voordat het uiteindelijk werkte.Toen het uiteindelijk werkte, kon ik kiezen of ik met de auto, te fiets of als voetganger wilde reizen. 
+[Afbeelding 3]
+
+Ik vond de transitie tussen de app en kaarten niet storend, het leek eigenlijk zelfs alsof het deel van de app was. Ik wil alsnog kijken of ik zelf een lijn kan tekenen op de kaart als route. Daarvoor heb ik de volgende code gevonden:
+https://stackoverflow.com/questions/40278362/get-directions-in-map-in-swift-3
+
 
 ## Conclusie
