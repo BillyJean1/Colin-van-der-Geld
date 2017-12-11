@@ -15,6 +15,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     let setLocation = CLLocation(latitude: 51.8369, longitude: 5.78018)
     let locationManager = CLLocationManager()
     
+    var currentLocation:CLLocation?
     override func viewDidLoad() {
         super.viewDidLoad()
         map.delegate = self
@@ -50,6 +51,28 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBAction func integratedNav(_ sender: UIButton) {
+        if (currentLocation != nil){
+        let twoDLocation = CLLocationCoordinate2D(latitude: setLocation.coordinate.latitude, longitude: setLocation.coordinate.longitude)
+        let request = MKDirectionsRequest()
+            request.source = MKMapItem(placemark: MKPlacemark(coordinate: (currentLocation?.coordinate)!, addressDictionary: nil))
+        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: twoDLocation, addressDictionary: nil))
+        request.requestsAlternateRoutes = false
+        request.transportType = .walking
+        
+        let directions = MKDirections(request: request)
+        
+        directions.calculate { [unowned self] response, error in
+            guard let unwrappedResponse = response else { return }
+            
+            for route in unwrappedResponse.routes {
+                self.map.add(route.polyline)
+                self.map.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+                }
+            }
+        }
+    }
+    
     @IBAction func navigate(_ sender: UIButton) {
         let twoDLocation = CLLocationCoordinate2D(latitude: setLocation.coordinate.latitude, longitude: setLocation.coordinate.longitude)
         
@@ -69,6 +92,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first{
+            currentLocation = location
             
         }
     }
@@ -133,6 +157,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             
         }
         return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+        polylineRenderer.strokeColor = UIColor.blue
+        polylineRenderer.fillColor = UIColor.red
+        polylineRenderer.lineWidth = 2
+        return polylineRenderer
+        
+        
     }
 }
 
