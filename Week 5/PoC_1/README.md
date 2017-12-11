@@ -1,8 +1,12 @@
 # Locaties in iOS (GPS)
 Bronnen: 
+
 https://developer.apple.com/documentation/corelocation/cllocationmanager
+
 https://www.youtube.com/watch?v=XyncTJdXbbw&t=249s
+
 https://www.gps-coordinates.net/
+
 https://stackoverflow.com/questions/33304340/how-to-find-out-distance-between-coordinates
 
 ## Hypothese
@@ -12,7 +16,7 @@ Gezien het zeer waarschijnlijk is dat we iOS gaan gebruiken, zal dit het platfor
 
 
 Daarom luidt de hypothese als volgt:
-Is het mogelijk om in iOS nauwkeurig te kunnen bepalen
+Is het mogelijk om in iOS de afstand tot een GPS-locatie nauwkeurig te kunnen bepalen?
 
 ## Testopzet
 Allereerst zal ik gaan kijken naar de huidige documentatie van apple zelf. Vervolgens zal ik gaan kijken naar een tutorial van Youtube en ga ik proberen mee te programmeren. Ik zal voor deze opdracht een extern apparaat aan de gang proberen te krijgen met Xcode zodat ik niet gebonden ben aan de simulator.
@@ -28,6 +32,9 @@ Kort daarna set ik de delegate en set ik de accuracy. Ik zie dat hiervoor een aa
 
 Bij het opstarten van de app kwam meteen een popup die vroeg of de app gebruik mocht maken van mijn GPS. Nadat ik deze had geaccepteerd, werden de GPS-coordinaten geprint in de console. Het is heel leuk dat ik onbekende GPS-coördinaten in mijn console kreeg, maar eerst eens kijken of ik dit ook op mijn apparaat werkende krijg, zodat ik de coördinaten om kan zetten en kan kijken of ik op mijn huisadres uitkom. Ik sluit mijn iPad aan, kies als apparaat de iPad en druk op launch. Ik kreeg vrijwel meteen de melding dat het apparaat in gebruik is. Daarom start ik het apparaat opnieuw op en sluit ik iTunes (die automatisch opent) op mijn macBook. Nog steeds niks... hmm. Ik plug de USB opnieuw in en krijg de melding dat ik het certificaat moet vertrouwen op het apparaat. Ik ben in ieder geval een stap verder. Ik doe wat er aangegeven wordt en vertrouw de app. Ik launch en het werkt! Ik krijg in mijn console weer coördinaten door, ik vul deze in op de site van de derde bron en kom precies terecht op de locatie waar ik op dat moment ben! Het werkt :).
 
-Vervolgens ga ik verder met de video en ga ik verder met het afvangen van het "weigeren" van de applicatie. Dit wordt gedaan in de vorm van een popup. Na het implementeren van de code in de tutorial, werkt dit vrijwel meteen out of the box.
+Vervolgens ga ik verder met de video en ga ik verder met het afvangen van het "weigeren" van de applicatie. Dit wordt gedaan in de vorm van een popup. Na het implementeren van de code in de tutorial, werkt dit vrijwel meteen out of the box. Nu wordt de gebruiker meegenomen naar de locatie instellingen indien de GPS geweigerd wordt.
+
+Nu ga ik kijken of ik kan achterhalen wat de afstand tussen twee GPS-coördinaten kan terugvinden. Na even te hebben gegoogeld kwam ik erachter dat er in Swift een ingebouwde functie zit die dit voor me kan doen (zie laatste bron). Eerst zal ik zelf een eigen GPS-coördinaat moeten opzetten. Ik pak de kaart erbij en klik op een locatie in de buurt vanaf mijn locatie. Ik wil nu kunnen printen hoeveel meter verschil tussen de huidige locatie en de gekozen locatie zit. Ik maak een setLocation variabele aan van het type CLLocation en geef de longitude en latitude mee van de gekozen locatie. Op Google Maps meet ik de afstand hemelsbreed, wat ongeveer op 1050 meter uitkomt.  Vervolgens zet ik de gevonden code in de update van de locatie, pas hem aan en probeer ik het uit. In mijn console krijg ik "1084.x...." te zien (waarbij "x...." voor een reeks andere getallen staat. Dit betekent dus dat ik 1086 meter van dat punt af zit, dit ligt dus in de buurt van de 1050 die ik schatte.
 
 ## Conclusie
+Het is een iOS goed te doen om afstand te bepalen tot bijvoorbeeld een point of interest (vooral nu ik de code al staande heb). De afstand wordt gegeven in meters en is vrij nauwkeurig. Vanuit de berekende afstand kan eenvoudig een "if-statement" worden geschreven die bepaalde events triggered. Dit werkt ook op devices (dit is getest op een fysiek device).
