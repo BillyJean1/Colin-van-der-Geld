@@ -16,7 +16,7 @@ Gezien het zeer waarschijnlijk is dat we iOS gaan gebruiken, zal dit het platfor
 
 
 Daarom luidt de hypothese als volgt:
-Is het mogelijk om in iOS de afstand tot een GPS-locatie nauwkeurig te kunnen bepalen?
+** Is het mogelijk om in iOS de afstand tot een GPS-locatie nauwkeurig te kunnen bepalen? **
 
 ## Testopzet
 Allereerst zal ik gaan kijken naar de huidige documentatie van apple zelf. Vervolgens zal ik gaan kijken naar een tutorial van Youtube en ga ik proberen mee te programmeren. Ik zal voor deze opdracht een extern apparaat aan de gang proberen te krijgen met Xcode zodat ik niet gebonden ben aan de simulator.

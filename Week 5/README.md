@@ -3,8 +3,8 @@
 ## Techs
 
 Deze week zal ik aan de gang gaan met de volgende techs:
-* 
-* 
+* Locaties in iOS (GPS)
+* Apple maps
 
 ## Reflectie
 
