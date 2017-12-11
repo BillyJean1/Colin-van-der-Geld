@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-
+    let setLocation = CLLocation(latitude: 51.8369, longitude: 5.78018)
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -30,7 +30,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first{
-            print(location.coordinate)
+            let currentCoordinate = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            let distance = currentCoordinate.distance(from: setLocation)
+            print(distance)
         }
     }
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
