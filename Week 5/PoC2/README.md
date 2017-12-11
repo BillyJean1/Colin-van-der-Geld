@@ -42,5 +42,8 @@ Als laatste zal ik nu gaan kijken naar het navigeren zelf. Ik ga eerst kijken ho
 Ik vond de transitie tussen de app en kaarten niet storend, het leek eigenlijk zelfs alsof het deel van de app was. Ik wil alsnog kijken of ik zelf een lijn kan tekenen op de kaart als route. Daarvoor heb ik de volgende code gevonden:
 https://stackoverflow.com/questions/40278362/get-directions-in-map-in-swift-3
 
+Ik maakte een tweede button aan waarmee ik de integrated navigation kon gebruiken. Uiteraard moet ik controleren of de positie wel gevonden is, daar schrijf ik een if-statement voor. Toen ik klikte op de gemaakte button, zoomde hij naar het juist niveau maar gaf hij geen lijn weer. Oja, natuurlijk, ik ben vergeten het onderste gedeelte code te implementeren, vandaar dat hij niks tekent. Na het toevoegen van de code, tekende hij een mooie lijn vanaf mijn locatie naar het punt waar ik heen wilde.
+[Afbeelding 4]
 
 ## Conclusie
+Met wat creativiteit is er veel mogelijk met Apple Maps. Custom icons op de map vind ik erg mooi werken en de schakeling naar de navigatie app werkt erg goed. Ik vind daarentegen de geïntegreerde navigatie niet zo heel mooi werken omdat er geen gesproken navigatie is en er maar een lijn wordt getekend die telkens moet worden geupdated. De kaarten app die door Apple wordt geleverd is daarentegen erg goed en ondersteunt navigatie voor te voet. Informatie toevoegen (annotations) aan een icon is ook erg goed te doen en vind ik persoonlijk mooier eruit zien dan die van Google. Er ligt dus potentie in het gebruik van kaarten van Apple in de app.
