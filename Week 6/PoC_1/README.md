@@ -8,7 +8,7 @@ https://firebase.google.com/docs/database/ios/read-and-write
 Gezien we zeer waarschijnlijk gaan werken met Firebase en dit nieuw voor mij is,leek het mij verstandig om hier een proof of concept voor te maken. We zullen dit gaan gebruiken in combinatie met Swift, daarom zal deze uitwerking toegespitst op Swift zijn. Hierbij zal voornamelijk gekeken worden naar het database gedeelte. 
 
 Daarom luidt de hypothese als volgt:
-** Het is mogelijk om Firebase te gebruiken bij een Swift project en dit toe te passen op de ReCrowd applicatie. **
+**Het is mogelijk om Firebase te gebruiken bij een Swift project en dit toe te passen op de ReCrowd applicatie.**
 
 
 ## Testopzet
