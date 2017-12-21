@@ -29,15 +29,19 @@ Een ding dat goed ging (wat vorige week minder ging) was de dag afsluiten. Hierm
 
 ### Wat ging er niet goed, waar heb je je aan geërgerd, wat moet er niet meer gebeuren?
 #### Bijhouden planningstaken
-Ik merk afgelopen week dat ik mijn trello bord niet goed bijhoud. 
+Ik merk afgelopen week dat ik mijn Trello bord niet goed bijhoud. Dit komt voornamelijk doordat sommige taken niet in Trello stonden, waardoor je vergeet taken bij te houden. Ook wordt er niet op gehamerd om taken te blijven bijhouden/loggen en gebruik te maken van de lanes binnen het Trello bord. Hierdoor wordt het moeilijk om de voortgang te kunnen bewaren en raken we snel het overzicht kwijt wie met welke taak bezig is. Dagdoelen werden op basis van het Trello bord daarentegen nog wel opgesteld, maar werden niet bijgewerkt in het Trello.
 
 #### Kritisch kijken, ook tijdens samenwerking
 
-
-#### Telkens maar weer diagrammen updaten
 
 
 ### Wat ga je komende tijd proberen te verbeteren?
 #### Kritischer kijken
 
+
+#### Gezamenlijk aan het einde van de dag taken doornemen
+Gezamenlijk zijn we op een idee gekomen waardoor de planning verbeterd kan worden: een daily sitdown aan het einde van de dag. Hierbij bespreken we wat we afgelopen dag hebben gedaan en hoe ver we met onze taken zijn gekomen. Ook gaan we zorgen dat we tijdens de standup het Trello bord gebruiken. Ook zullen we ervoor moeten zorgen dat ontbrekende taken in overleg worden toegevoegd aan het Trello bord. 
+
+
+#### Telkens maar weer diagrammen updaten
 
