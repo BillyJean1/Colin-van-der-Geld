@@ -10,15 +10,34 @@ Deze week zal ik aan de gang gaan met de volgende techs:
 
 ### Takenlijst week 6
 * PoC onderzoeken uitvoeren
-
+* Package diagram maken
+* Class diagram maken (wat we hadden was nog zeer beperkt)
+* Samen met de groep de use case "aanbeveling doen" uitwerken in zowel een sequence als een system sequence diagram
+* Digitaliseren system sequence en sequence diagrams
+* Technisch ontwerp hoofdstukken inleiden
+* Technisch ontwerp diagrammen uitleggen
+* Pair programmen use case inchecken (samen met Kevin, zelf begonnen met uitwerken FirebaseService, nadenken over datastructuur in Firebase Database)
+* Designs (schermontwerpen) doorspreken
 
 
 ### Wat ging er afgelopen week goed?
-#### TITEL
+#### Meer motivatie
+Tijdens deze week had ik meer motivatie. Zoals ik al eerder benoemd had, kwam soms het gebrek aan motivatie doordat ik voor een langere tijd met dezelfde taak bezig was die ik persoonlijk niet erg leuk vond. Deze week heb ik ervoor gezorgd dat ik deze taken afwisselde (leuke en minder leuke) waardoor ik gemotiveerde was om de taken te doen die ik minder leuk vond. Ook als ik voor langere tijd bezig was met een taak die ik minder leuk vond, ging ik tussendoor meekijken met groepsgenoten die bijvoorbeeld aan het programmeren waren en bood ik mijn hulp aan. Hierbij hielp ik even nodig (voor zo lang nodig was) en ging ik vervolgens weer verder met mijn taak. Dit zorgde er uiteindelijk voor dat ik wat productiever was bij de taken die ik minder leuk vond.
+
+#### Dag afsluiten
+Een ding dat goed ging (wat vorige week minder ging) was de dag afsluiten. Hiermee bedoel ik dat ik aan het einde van de dag ervoor zorgde dat al mijn bestanden waren geupload en dat mijn groepsleden bij mijn werk konden. Ook zorgde ik ervoor dat ik alles pushde wat ik tot dat moment had (of ik liet Kevin dat doen gezien we voornamelijk op zijn computer werkte). Ondanks dat de planning niet geweldig was, kon ik alsnog terug redeneren welke taken ik die dag uitgevoerd had en welke bestanden/producten daarbij hoorde. Aan de hand hiervan kon ik mijn bestanden opslaan voordat ik naar huis ging en konden mijn groepsgenoten er hoe dan ook bij. Ik moet zeggen dat dit meer rust gaf dan "oja ik moet thuis nog even ..... uploaden".
 
 ### Wat ging er niet goed, waar heb je je aan geërgerd, wat moet er niet meer gebeuren?
-#### TITEL
+#### Bijhouden planningstaken
+Ik merk afgelopen week dat ik mijn trello bord niet goed bijhoud. 
+
+#### Kritisch kijken, ook tijdens samenwerking
+
+
+#### Telkens maar weer diagrammen updaten
 
 
 ### Wat ga je komende tijd proberen te verbeteren?
-#### TITEL
+#### Kritischer kijken
+
+
