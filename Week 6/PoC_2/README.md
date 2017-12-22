@@ -37,7 +37,10 @@ Om te kunnen kijken hoeveel code coverage ik op dat moment had, gebruikte ik de 
 
 Nu ik weet hoe ik moet werken met XCTAssert en unit tests moet schrijven, ga ik dit toepassen op de ReCrowd applicatie. 
 
-Allereerst begin ik met het aanmaken van een Login test. Vervolgens probeerde ik een test te schrijven, maar dit lukte niet gezien er gezegd werd dat de Firebase module missende was. Hieruit bleek dat ik in mijn Podfile zijn testimports de Firebase Database ook erbij moest zetten. Toen ik weer een pod install had uitgevoerd, kon ik 
+Allereerst begin ik met het aanmaken van een Login test. Vervolgens probeerde ik een test te schrijven, maar dit lukte niet gezien er gezegd werd dat de Firebase module missende was. Hieruit bleek dat ik in mijn Podfile zijn testimports de Firebase Database ook erbij moest zetten. Toen ik weer een pod install had uitgevoerd, kon ik eindelijk aan de gang met het schrijven van de unit test. 
 
+Na het maken kwam ik erachter dat het testen van een service die gebruik maakt van een externe server lastiger is dan dat ik gedacht had. Oorspronkelijk wilde ik testen of een record in de database gezet werd (een testrecord) en te kijken of deze opgehaald kon worden om deze vervolgens weer te verwijderen. Dit ging echter niet gezien de restricties met Firebase: op het moment dat ik de test draai, wordt er niks aangemaakt in de database terwijl als de code zelf uitgevoerd wordt via de applicatie, er wel een record in de Firebase database wordt gezet. Ik kwam er uiteindelijk achter dat als ik gebruik maak van unit tests, de Firebase database niet bereikt kan worden (hij wordt min of meer gemockt). 
+
+Gezien er nog te weinig was van andere logica classes op het moment, ben ik de domain objecten gaan testen. Dit doe ik om twee redenen: allereerst wil ik zeker weten dat het initialiseren van een object succesvol kan worden gedaan en wil ik een template (voor unit tests) bieden, mocht er in de toekomst logica in de domain objecten komen. Ten tweede is dit handig voor het geval dat iemand het domain wijzigt (zoals bijvoorbeel access modifiers of een getal ergens in een initializer aan een attribuut toevoegt). Indien dit gebeurt, zullen sommige stukken code omvallen, zullen de unit tests ervan mogelijk falen en door dit toe te passen, zal het probleem eenvoudig opgespoord kunnen worden.
 
 ## Conclusie
