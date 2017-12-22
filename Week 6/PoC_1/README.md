@@ -8,7 +8,7 @@ https://firebase.google.com/docs/database/ios/read-and-write
 Gezien we zeer waarschijnlijk gaan werken met Firebase en dit nieuw voor mij is,leek het mij verstandig om hier een proof of concept voor te maken. We zullen dit gaan gebruiken in combinatie met Swift, daarom zal deze uitwerking toegespitst op Swift zijn. Hierbij zal voornamelijk gekeken worden naar het database gedeelte. 
 
 Daarom luidt de hypothese als volgt:
-** Het is mogelijk om Firebase te gebruiken bij een Swift project en dit toe te passen op de ReCrowd applicatie. **
+**Het is mogelijk om Firebase te gebruiken bij een Swift project en dit toe te passen op de ReCrowd applicatie.**
 
 
 ## Testopzet
@@ -24,7 +24,7 @@ Toen moest ik de SDK toevoegen aan de hand van een Podfile. Google gaf een aanta
 Toen ik al deze stappen had doorlopen, zag ik een tal van mogelijkheden binnen Firebase. Omdat ik met een database wilde werken, koos ik voor de optie "database". Al snel kwam ik erachter dat dit een NoSQL database is. Ik ben een tutorial via Youtube gaan kijken (zie tweede bron) om erachter te komen hoe dit precies werkt. Ik voegde Firebase/Database toe aan mijn Podfile en deed nog een install. Toen ik een reference naar de database wilde maken, kwam ik erachter dat de tutorial die ik volgde, verouderd was een het een en ander was gerenamed. Ook was FirebaseDatabase benodigd, anders draaide de applicatie niet. 
 
 Vervolgens ben ik gaan kijken naar de derder bron (hoe er met data gewerkt kon worden). Hierbij maakte ik zelf een button aan waar, indien erop gelikt wordt, er data wordt toegevoegd aan mijn Users tabel. Hierbij was het id "1" en was de gebruikersnaam "colin123". Voordat ik dit verzoek verstuurde, zorgde ik ervoor dat ik zeker wist dat mijn database leeg was, en dat was hij:
-[afbeelding 1]
+![afbeelding 1](https://github.com/BillyJean1/Colin-van-der-Geld/blob/master/Week%206/PoC_1/Afbeelding1.png?raw=true)
 
 Ik klikte op de knop en... een error:
 "[Firebase/Database][I-RDB038012] setValue: or removeValue: at /users/1 failed: permission_denied"
