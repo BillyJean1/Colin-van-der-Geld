@@ -102,18 +102,39 @@ class ViewController: UIViewController, SKProductsRequestDelegate, SKPaymentTran
     
     
     @IBAction func btnRemoveAdds(_ sender: UIButton) {
+        for product in list {
+            let prodID=product.productIdentifier
+            if(prodID == "com.colinvandergeld.removeAdds") {
+                p = product
+                buyProduct()
+            }
+        }
+    }
+    func buyProduct() {
+        print("buy" + p.productIdentifier)
+        let pay = SKPayment(product: p)
+        SKPaymentQueue.default().add(self)
+        SKPaymentQueue.default().add(pay as SKPayment)
     }
     
     @IBAction func btnAddCoins(_ sender: UIButton) {
+        print("Add dem coins")
+        for product in list {
+            let prodID = product.productIdentifier
+            if(prodID == "com.colinvandergeld.removeAdds") {
+                p = product
+                buyProduct()
+            }
+        }
     }
     
     @IBAction func btnRestorePurchases(_ sender: UIButton) {
+        SKPaymentQueue.default().add(self)
+        SKPaymentQueue.default().restoreCompletedTransactions()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnRemoveAdds.isEnabled = false
-        btnAddCoins.isEnabled = false
-        btnRestorePurchases.isEnabled = false
         
         if(SKPaymentQueue.canMakePayments()){
             print("IAP is enabled, loading")

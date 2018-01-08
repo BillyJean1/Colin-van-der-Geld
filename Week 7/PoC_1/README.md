@@ -35,7 +35,10 @@ Gezien het registreren niet lukte, weet ik niet zeker in hoeverre de aankopen ge
 
 Ik begin met het maken van buttons en voeg actions toe aan deze knoppen. Ook maak ik labels waar ik vervolgens ook outlets van maak. Daarna schrijf ik de functies die achter de aankopen zitten en maak ik een lijst aan van SKProducts. Dit is een lijst van koopbare items. Daarna schrijf ik een functie die alle in-app purchase items voor mij ophaalt vanuit de apple servers. Daarna schrijf ik een functie die ervoor zorgt dat als een aankoop gedaan is, de juiste code wordt uitgevoerd. Daarna maakte ik een aantal cases die ervoor moeten zorgen dat als er iets mis gaat, dit ook opgevangen wordt. Als dat gedaan is, schrijf ik een stuk code die ervoor moet zorgen dat de knoppen pas enabled zijn op het moment dat de koopbare items zijn geladen.
 
+Na dit gedaan te hebben, implementeerde ik de functionaliteit van de buttons en maakte ik een functie aan die ervoor zorgde dat er aankopen gedaan kunnen worden. De laatste functie zorgt ervoor dat aankopen gereset kunnen worden. Ik ben benieuwd wat er gebeurt als ik de app test gezien ik geen aankopen heb kunnen registreren in Itunes connect....
+
+Toen ik de "remove adds" knop indrukte, kreeg ik een melding dat ik in moest loggen op de emulator telefoon. Na het inloggen ging ik terug naar de app en kwam ik er helaas achter dat het niet werkt zonder geregistreerde producten in Itunes connect. Wel was op de tutorial te zien dat het daar wel werkte, daarom lijkt mij dit eenvoudig te implementeren indien er in de toekomst in app aankopen in de Recrowd app komen.
 
 ## Conclusie
-
+Het is zeker mogelijk om in-app purchases uit te programmeren in Swift, het is hierbij wel belangrijk dat diegene beschikt over een Apple devleoper license. Gezien geen van de projectleden dit hebben en er geen toegang verleend is door school tot Itunes connect, is dit helaas op dit moment niet mogelijk. Wel is het nu eenvoudig te implementeren met de code die ik geschreven heb, mocht er in de toekomst wel gebruik van gemaakt worden.
 
