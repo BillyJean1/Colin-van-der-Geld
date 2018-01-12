@@ -72,6 +72,32 @@ class ViewController: UIViewController{
         }
      
     }
+    @IBAction func flash(_ sender: UIButton) {
+        if let device = AVCaptureDevice.default(for: AVMediaType.video){
+            if (device.hasTorch) {
+            do {
+                try device.lockForConfiguration()
+                if (device.torchMode == AVCaptureDevice.TorchMode.on) {
+                    device.torchMode = AVCaptureDevice.TorchMode.off
+                } else {
+                    do {
+                        try device.setTorchModeOn(level: 1.0)
+                    } catch {
+                        print(error)
+                    }
+                }
+                device.unlockForConfiguration()
+            } catch {
+                print(error)
+            }
+        }
+    }
+    }
+    
+    @IBAction func vibrate(_ sender: UIButton) {
+        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))   
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

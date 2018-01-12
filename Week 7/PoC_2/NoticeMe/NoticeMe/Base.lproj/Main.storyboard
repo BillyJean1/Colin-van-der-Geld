@@ -50,6 +50,22 @@
                                     <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rlx-sF-zcS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yt9-EO-JSC">
+                                <rect key="frame" x="131" y="96" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BZZZZZZZZZ!"/>
+                                <connections>
+                                    <action selector="vibrate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5F-3M-TW6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZd-Od-1HG">
+                                <rect key="frame" x="155" y="598" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="The flash"/>
+                                <connections>
+                                    <action selector="flash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hDb-bz-bhy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

@@ -7,6 +7,8 @@ https://stackoverflow.com/questions/32036146/how-to-play-a-sound-using-swift
 https://www.youtube.com/watch?v=QozQ3RYlBSA
 https://www.youtube.com/audiolibrary/soundeffects
 https://www.youtube.com/watch?v=dqad3XuMwHI
+https://stackoverflow.com/questions/26455880/how-to-make-iphone-vibrate-using-swift
+
 
 ## Hypothese
 Om de gebruiker een betere gebruikerservaring te kunnen bieden, is het belangrijk de gebruiker op verschillende manieren feedback te geven. Manieren die toegepast kunnen worden (die nu nog niet benut worden binnen de app) zijn bijvoorbeeld het trillen van de telefoon of het gebruik maken van geluiden. Ik denk dat hier een aantal kansen liggen voor de app, zoals bijvoorbeeld feedbackgeluid wanneer een gebruiker een "beloning verzilvert" of trilling wanneer er een aanbeveling pop-up komt in de app. 
@@ -33,8 +35,11 @@ Om het werkende te krijgen, sleepte ik het geluidsbestand naar de assets toe en 
 
 Na een gedeelte van de tutorial te volgen, is het gelukt om een eigen geluid toe te voegen. Ook heb ik hierbij meteen de pauzeerknop toegevoegd. Cool!
 
-Nu over naar het volgende feedback mechanisme: vibratie. Laten we eens kijken voor hoe lang ik de telefoon kan laten trillen.
+Nu over naar het volgende feedback mechanisme: vibratie. Laten we eens kijken voor hoe lang ik de telefoon kan laten trillen. Na even Googelen, kwam ik erachter dat het vibreren van de telefoon eigenlijk gewoon een geluid is (zie laatste Stackoverflow link). Na een knop aangemaakt te hebben voor trilling en de code erin gezet te hebben, ging ik testen. Ik runde de code op mijn simulator en.... niks. Oja, een simulator kan niet trillen. Ik moet hierbij daarom maar geloven dat dit werkt op een fysiek apparaat gezien ik geen iOS device bezit. Eventueel kan er meerdere keren achter elkaar gevibreerd worden door middel van een sleep ertussen te plaatsen. De maximale tijd dat het device getrild kan worden is 1 seconde per keer. 
+
+BONUS:
+
+Mij leek het interessant om te kijken hoe de zaklamp in elkaar steekt in Swift. Ik ben daarom gaan kijken naar bestaande code, en kwam erachter dat dit ook niet zo moeilijk is. Eerst moet gekeken worden of het apparaat een zaklamp heeft, zo ja dan moet gekeken worden wat de staat van de zaklamp is: aan of uit? Als hij aan is, moet hij uit worden gezet, is hij uit dan moet hij aan worden gezet. En dat is alles! Wel waren er heel veel wijzigingen gedaan vergeleken met hetgeen wat er op internet te vinden viel wat betreft naamgeving van methodes. Helaas kon ik dit ook niet testen op een fysiek device, dus zal ik dit ook moeten testen op een fysiek device als ik van plan ben hiermee een functie te maken.
 
 ## Conclusie
-
-
+Het is zeker mogelijk om de functies van de telefoon te gebruiken om de gebruiker meer feedback te geven over wat er gebeurt en een betere gebruikerservaring te bieden. Opvallend is dat de ene sensor veel makkelijker te gebruiken is dan de andere. Ik denk dat geluid zeker een verrijking is voor onze app, vooral bij het gedeelte waarin beloningen als een soort cadeau wordt opengemaakt. Het trillen kan bijvoorbeeld worden gebruikt bij het schudden van het cadeau. Er zijn dus goede toepassingen binnen de Recrowd app op het gebied van feedback door middel van verschillende telefoonfuncties.
