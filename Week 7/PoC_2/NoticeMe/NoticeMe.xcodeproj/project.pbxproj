@@ -12,6 +12,7 @@
 		1399608320039A0400A15B6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1399608120039A0400A15B6C /* Main.storyboard */; };
 		1399608520039A0400A15B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1399608420039A0400A15B6C /* Assets.xcassets */; };
 		1399608820039A0400A15B6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1399608620039A0400A15B6C /* LaunchScreen.storyboard */; };
+		13CED89D2008CCC7000FFF9E /* baseball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 13CED89C2008CCC7000FFF9E /* baseball.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1399608420039A0400A15B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1399608720039A0400A15B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1399608920039A0400A15B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CED89C2008CCC7000FFF9E /* baseball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = baseball.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		1399607C20039A0300A15B6C /* NoticeMe */ = {
 			isa = PBXGroup;
 			children = (
+				13CED89B2008CC76000FFF9E /* Muziek */,
 				1399607D20039A0300A15B6C /* AppDelegate.swift */,
 				1399607F20039A0400A15B6C /* ViewController.swift */,
 				1399608120039A0400A15B6C /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				1399608920039A0400A15B6C /* Info.plist */,
 			);
 			path = NoticeMe;
+			sourceTree = "<group>";
+		};
+		13CED89B2008CC76000FFF9E /* Muziek */ = {
+			isa = PBXGroup;
+			children = (
+				13CED89C2008CCC7000FFF9E /* baseball.mp3 */,
+			);
+			path = Muziek;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CED89D2008CCC7000FFF9E /* baseball.mp3 in Resources */,
 				1399608820039A0400A15B6C /* LaunchScreen.storyboard in Resources */,
 				1399608520039A0400A15B6C /* Assets.xcassets in Resources */,
 				1399608320039A0400A15B6C /* Main.storyboard in Resources */,

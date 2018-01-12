@@ -5,6 +5,8 @@ https://stackoverflow.com/questions/31126124/using-existing-system-sounds-in-ios
 https://github.com/TUNER88/iOSSystemSoundsLibrary
 https://stackoverflow.com/questions/32036146/how-to-play-a-sound-using-swift
 https://www.youtube.com/watch?v=QozQ3RYlBSA
+https://www.youtube.com/audiolibrary/soundeffects
+https://www.youtube.com/watch?v=dqad3XuMwHI
 
 ## Hypothese
 Om de gebruiker een betere gebruikerservaring te kunnen bieden, is het belangrijk de gebruiker op verschillende manieren feedback te geven. Manieren die toegepast kunnen worden (die nu nog niet benut worden binnen de app) zijn bijvoorbeeld het trillen van de telefoon of het gebruik maken van geluiden. Ik denk dat hier een aantal kansen liggen voor de app, zoals bijvoorbeeld feedbackgeluid wanneer een gebruiker een "beloning verzilvert" of trilling wanneer er een aanbeveling pop-up komt in de app. 
@@ -24,6 +26,14 @@ Op internet had ik een lijst gevonden met standaard (systeem)geluiden en welke c
 Toen ik de completion block schreef, kwam ik erachter dat ik moeilijk kon bijhouden hoe vaak de loop al was gebeurt gezien ik te maken heb met pointers die mogelijk kunnen verdwijnen en ik asynchroon programmeer. Ik kon in de completion block geen eerder aangemaakte variabelen gebruiken en kon ook geen gebruikmaken van "weak self". Ook heb ik geprobeerd de lengte van de file te kunnen achterhalen, zodat ik iedere x aantal seconden het geluid kan herhalen. Dit is helaas ook niet gelukt. 
 
 Ik ben daarom gaan proberen gebruik te maken van een AVAudioPlayer, hierbij kon namelijk wel gebruik worden gemaakt van een loop-functie. Jammergenoeg werkte dit ook niet, gezien de url niet gepakt werd door Xcode. Dit zou een leuke functie zijn geweest voor bijvoorbeeld het geven van een tromgeroffel bij het openen van een beloning. 
+
+De standaard systeemgeluiden van Apple zijn leuk, maar ik zou graag een eigen geluid willen importeren. Hiervoor heb ik de op een na onderste Youtube link gebruikt om een gratis audiogeluid vandaan te downloaden (ik koos voor het bestand "Basketball Bounce and Roll"). Dit bestand is in .mp3 formaat, daarom was ik benieuwd of dit ging werken in Xcode. Na even Googelen kwam ik erachter dat AVFoundation, hetgeen dat het audiovisuele regelt, heel veel veschillende audioformaten ondersteund, waaronder .mp3. .Wav schijnt het beste te zijn voor korte geluiden gezien het weinig CPU-usage heeft en een hoge afspeelkwaliteit. Mocht ik dus een app maken, dan zal ik zeer waarschijnlijk de .mp3 bestanden omzetten naar .wav. Voor deze PoC is .mp3 goed genoeg. 
+
+Om het werkende te krijgen, sleepte ik het geluidsbestand naar de assets toe en paste ik de code van "how to play a sound using Swift" toe (zie Stackoverflow bron). Uiteraard paste ik het aan zodat het toepasbaar was op mijn applicatie en maakte ik een knop aan die het custom sound moest afspelen. Bij het testen, bleek de code niet te werken. Dit kwam zeer waarschijnlijk omdat ik de asset naam had veranderd gezien deze te lang was, maar de bestandsnaam hetzelfde was gebleven. Om deze reden verwijderde ik de asset weer, gaf ik het origineel een andere naam en stopte het weer in het project. Ook dit werkte niet en het bleek dat de asset niet kon worden gevonden door Xcode. Om die reden ben ik de onderstende Youtube tutorial gaan gebruiken en kwam ik erachter dat de file zelf in het project moet staan, niet in de assets.
+
+Na een gedeelte van de tutorial te volgen, is het gelukt om een eigen geluid toe te voegen. Ook heb ik hierbij meteen de pauzeerknop toegevoegd. Cool!
+
+Nu over naar het volgende feedback mechanisme: vibratie. Laten we eens kijken voor hoe lang ik de telefoon kan laten trillen.
 
 ## Conclusie
 
