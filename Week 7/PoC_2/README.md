@@ -1,12 +1,19 @@
 # Feedback in Swift
 Bronnen: 
 https://developer.apple.com/documentation/avfoundation/avaudioplayer
+
 https://stackoverflow.com/questions/31126124/using-existing-system-sounds-in-ios-app-swift
+
 https://github.com/TUNER88/iOSSystemSoundsLibrary
+
 https://stackoverflow.com/questions/32036146/how-to-play-a-sound-using-swift
+
 https://www.youtube.com/watch?v=QozQ3RYlBSA
+
 https://www.youtube.com/audiolibrary/soundeffects
+
 https://www.youtube.com/watch?v=dqad3XuMwHI
+
 https://stackoverflow.com/questions/26455880/how-to-make-iphone-vibrate-using-swift
 
 
