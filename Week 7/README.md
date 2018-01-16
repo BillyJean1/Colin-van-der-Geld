@@ -10,13 +10,13 @@ Deze week zal ik aan de gang gaan met de volgende techs:
 
 ### Takenlijst week 7
 * PoC onderzoeken uitvoeren
-* Bijwerken services
 * Bepalen structuur Firebase database
-* Controleren en doorlopen concept tests
 * Mergen van branches UI met code en losse codebranches
-* Uitprogrammeren use case "punten verzilveren" (full-stack)
-* Pair programmen met Kevin: uitwerken inchecken
-* Bugs oplossen inchecken + oplossen bug die eigenlijk helemaal geen bug bleek te zijn (evt. toelichting tijdens gesprek of zie kopje "Mergen")
+* Pair programmen met Kevin: verder uitwerken inchecken
+* Uitwerken (programmeren) use case "punten verzilveren" (full-stack)
+* Controleren + uitvoeren concept tests
+* Bijwerken services (doorgeeffunctie, variabelen toevoegen+bijwerken checkedInUser) 
+* Bug oplossen die eigenlijk helemaal geen bug bleek te zijn (evt. toelichting tijdens gesprek of zie kopje "Mergen")
 
 
 ### Wat ging er afgelopen week goed?
